@@ -4,7 +4,7 @@ pragma solidity 0.8.6;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract SiraFT is ERC721 {
+contract SiraFT is ERC721, Ownable {
     uint256 token_count;
     uint256 public totalSupply = 1000000;
     uint256 price = 100000000000000000;
